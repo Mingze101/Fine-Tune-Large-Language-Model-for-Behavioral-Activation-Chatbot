@@ -1,0 +1,342 @@
+start:
+  
+  remember td = 0 // time default = 0
+  remember ts = 1500 //time short
+  remember tm = 2500 // time medium
+  remember tl = 4000 // time long
+  
+  say Wait(tm)
+  say Typing(tm)
+  say Image("https://media0.giphy.com/media/XBG7hzVQymRJk2LPpE/giphy.gif?cid=ecf05e47b04fsm0ydskrq0irrbpnv9p9vhi4yk73n64t19xi&rid=giphy.gif&ct=g")
+  
+  say Wait(tm)
+  say Typing(tm)
+  say Question (
+    title = "Ich habe Lust, was Positives zu machen!",
+    buttons= [ 
+      Button("👟")
+    ]
+  )
+  hold
+  
+  say Wait(tm)
+  say Typing(tm)
+  say Question (
+    title = "Und ich möchte auch, dass du was Positives machst!",
+    buttons= [ 
+      Button("Hmm...muss das sein?"),
+      Button("Okay")
+    ]
+  )
+  hold
+  
+  say Wait(tm)
+  say Typing(tm)
+  say "Um es kurz zu machen: Ich möchte dir dabei helfen, dass du mehr Aktivitäten machst, die dir Spaß machen. 🤗"
+
+  say Wait(tm)
+  say Typing(tm)
+  say Question (
+    title = "Dazu wollen wir herausfinden, warum das wichtig ist, welche Aktivitäten dir Spaß machen und wie du sie planen und umsetzen kannst.",
+    buttons= [ 
+      Button("Okay")
+    ]
+  )
+  hold
+
+  say Wait(tm)
+  say Typing(tm)
+  say Question(
+    title = "Wusstest du, dass deine Stimmung, deine Gedanken und dein Verhalten miteinander zusammenhängen? 🕸️",
+    buttons= [ 
+      Button("Ja, klar!"),
+      Button("Hmm?")
+    ]
+  )
+  hold
+
+ say Wait(tm)
+ say Typing(tm)
+ say "Also..."
+
+ say Wait(tm)
+ say Typing(tm)
+ say "Dein Denken beeinflusst, was du machst. 🔄"
+
+ say Wait(tm)
+ say Typing(tm)
+ say "Und was du machst, beeinflusst, wie du dich fühlst. 🔄"
+
+ say Wait(tm)
+ say Typing(tm)
+ say Question(
+    title = "Und wie du dich fühlst, beeinflusst wieder dein Denken. 🔄",
+    buttons= [ 
+      Button("Ja, weiß ich doch!"),
+      Button("Okay")
+    ]
+  )
+  hold
+
+say Wait(tm)
+say Typing(tm)
+say "Lass uns dazu mal ein Beispiel anschauen."
+
+say Wait(tm)
+say Typing(tm)
+say "Du denkst: Es wäre cool, wenn ich mich heute mit Freund:innen treffen würde!"
+
+say Wait(tm)
+say Typing(tm)
+say "Machen: Du verabredest dich mit deinen Leuten und ihr macht etwas zusammen."
+
+say Wait(tm)
+say Typing(tm)
+say "Fühlen: Schon allein, wenn du dich mit deinen Freund:innen verabredest, wirst du dich wahrscheinlich gut fühlen. 🤗 Natürlich noch mehr, wenn ihr euch dann trefft."
+
+say Wait(tm)
+say Typing(tm)
+say Question(
+    title = "Und, verstehst du den Zusammenhang?",
+    buttons= [ 
+      Button("👍")
+    ]
+  )
+  hold
+
+say Wait(tm)
+say Typing(tm)
+say "Gut! Dann lass uns den Zusammenhang nochmal genauer untersuchen. Schaue dazu mal das Bild an:"
+
+say Wait(tm)
+say Typing(tm)
+say Image("https://orion.s3.iism.kit.edu/amsl-content/p/de/t/verhaltensaktivierung/abw%C3%A4rtsspirale_abel.png")
+
+say Wait(tm)
+say Typing(tm)
+say Question(
+    title = "Verstehst du's?",
+    buttons= [ 
+      Button("ja 👍"),
+      Button("nicht so recht")
+    ]
+  )
+  hold
+
+if (event == "nicht so recht")
+  goto erklaerung-abwaertsspirale
+  else goto aufwaertsspirale
+
+erklaerung-abwaertsspirale:
+  say Wait(tm)
+  say Typing(tm)
+  say "Du fühlst dich traurig oder hast keine Lust, etwas zu machen."
+
+  say Wait(tm)
+  say Typing(tm)
+  say "Du denkst: 'Ich bekomme kaum was hin.' und 'Ich habe keine Lust auf meine Freund:innen.'"
+
+  say Wait(tm)
+  say Typing(tm)
+  say Question(
+    title = "Du machst dann nur noch das Nötigste.",
+    buttons= [ 
+      Button("Hmm")
+    ]
+  )
+  hold
+
+  say Wait(tm)
+  say Typing(tm)
+  say "Dadurch machst du keine guten Erfahrungen und fühlst dich noch schlechter."
+
+  say Wait(tm)
+  say Typing(tm)
+  say "Und die Stimmung ist im Keller."
+
+  say Wait(tm)
+  say Typing(tm)
+  say Question(
+    title = "Erkennst du den Zusammenhang jetzt besser?",
+    buttons= [ 
+      Button("ja 👍"),
+      Button("nicht so recht")
+    ] 
+  )
+  hold
+
+  say Wait(tm)
+  say Typing(tm)
+  say "Weil du negativ denkst und nichts machen kannst, geht es auch mit deiner Stimmung bergab!"
+
+  say Wait(tm)
+  say Typing(tm)
+  say Question(
+    title = "Wir nennen das mal: Abwärtsspirale. Kannst du dir das merken?",
+    buttons= [ 
+      Button("ja 👍"),
+      Button("⬇️🌀")
+    ]
+  )
+  hold
+  goto aufwaertsspirale
+
+aufwaertsspirale:  
+  say Wait(tm)
+  say Typing(tm)
+  say "Und jetzt die gute Nachricht: Dein Denken und dein Verhalten kannst du beeinflussen!"
+
+  say Wait(tm)
+  say Typing(tm)
+  say Question(
+    title = "Es kann also auch wieder bergauf gehen!",
+    buttons= [ 
+      Button("🚀")
+    ]
+  )
+  hold
+
+ say Wait(tm)
+ say Typing(tm) 
+ say "Hier ist ein Bild von der Aufwärtsspirale:"
+ 
+ say Wait(tm)
+ say Typing(tm) 
+ say Image("https://orion.s3.iism.kit.edu/amsl-content/p/de/t/verhaltensaktivierung/aufw%C3%A4rtsspirale_abel.png")
+ 
+ say Wait(tm)
+ say Typing(tm)
+ say Question(
+  title = "So eine Aufwärtsspirale kann man mit etwas starten, was einem gut tut. 🔼🌀",
+  buttons = [
+    Button("🌀⬆")
+  ]
+ ) 
+ hold
+
+ say Wait(tm)
+ say Typing(tm)
+ say Question(
+    title = "Um dir das gut zu erklären, starten mal wir mit einem Beispiel am Nullpunkt.",
+    buttons= [ 
+      Button("okay")
+    ]
+  )
+  hold
+
+say Wait(tm)
+say Typing(tm)
+say "Obwohl du dich traurig fühlst oder keine Lust hast, denkst du: 'Mir geht es gar nicht gut. Aber wenn ich will, dann kann ich was machen! Das muss gar keine große Sache sein.'"
+
+say Wait(tm)
+say Typing(tm)
+say "Und dann schaffst du es auch, etwas Positives zu machen. Zum Beispiel: Du gehst duschen oder räumst dein Zimmer auf."
+
+say Wait(tm)
+say Typing(tm)
+say "Dadurch steigt deine Stimmung und du denkst: 'Ich kann ja doch etwas!' und 'Ich werde das jetzt öfter machen!'"
+
+say Wait(tm)
+say Typing(tm)
+say Question (
+  title = "Verstehst du auch diesen Zusammenhang?",
+  buttons= [ 
+    Button("Ja! 👍"),
+  ]
+)
+hold
+
+say Wait(tm)
+say Typing(tm)
+say "Weil du positiv denkst und dich überwindest, etwas zu machen, geht es auch mit deiner Stimmung bergauf!"
+
+say Wait(tm)
+say Typing(tm)
+say Question(
+  title = "Das nennen wir Aufwärtsspirale.",
+  buttons= [ 
+    Button("⬆️🌀")
+  ]
+)
+hold
+
+say Wait(tm)
+say Typing(tm)
+say "Eigentlich keine große Sache. Du musst dir nur Abwärtsspirale oder Aufwärtsspirale merken. 🤓"
+
+say Wait(tm)
+say Typing(tm)
+say "Der Trick ist: Du kannst bestimmen, in welche Richtung es geht! 🔽🔼"
+
+say Wait(tm)
+say Typing(tm)
+say Question (
+  title = "So eine Aufwärtsspirale kannst du mit etwas starten, was dir gut tut. 🔼🌀",
+  buttons= [ 
+    Button("zum Glück 👍")
+  ]
+)
+
+goto frage_wie_aktiv
+
+frage_wie_aktiv:
+
+ say Wait(tm)
+ say Typing(tm)
+ say "Und jetzt zu dir..."
+
+ say Wait(tm)
+ say Typing(tm)
+ say Question(
+    title = "Wie aktiv warst du in der letzten Woche so?",
+    buttons= [ 
+      Button("sehr aktiv"),
+      Button("etwas aktiv"),
+      Button("wenig aktiv"),
+      Button("gar nicht aktiv")
+    ]
+  )
+  hold 
+ 
+ 
+ say Wait(tm)
+ say Typing(tm)
+ say "Und welche Aktivitäten hast du gemacht?"
+ hold 
+
+ say Wait(tm)
+ say Typing(tm)
+ say "Alles klar!"
+ 
+ say Wait(tm)
+ say Typing(tm)
+ say "Das war unsere erste Unterhaltung zu positiven Aktivitäten. 🎉"
+
+ say Wait(tm)
+ say Typing(tm)
+ say Question(
+  title = "Kleiner Cliffhanger oder? ⛰️",
+  buttons = [
+    Button("Ja!! 😅")
+  ]
+ )
+ hold
+ 
+ say Wait(tm)
+ say Typing(tm)
+ say "Keine Sorge! Nächstes mal geht es mehr um deine Aktivitäten. 🙌"
+ 
+ say Wait(tm)
+ say Typing(tm)
+ say "Ich hoffe, du hast in dieser Unterhaltung verstanden, wie Gefühle, Gedanken und Verhalten miteinander zusammenhängen. Und wie wir mit guten Aktivitäten Gedanken und Gefühle beeinflussen können. 🤗"
+
+ say Wait(tm)
+ say Typing(tm)
+ say "Das war mir für den Anfang wichtig. 🙏"
+ 
+ say Wait(tm)
+ say Typing(tm)
+ say "Im nächsten Teil möchte ich solche positiven Aktivitäten zusammen mit dir finden und dir zeigen, wie du sie gut umsetzen kannst. 🙌"
+
+
+goto end

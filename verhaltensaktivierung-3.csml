@@ -1,0 +1,148 @@
+start:
+      
+  remember td = 0 // time default = 0
+  remember ts = 1500 //time short
+  remember tm = 2500 // time medium
+  remember tl = 4000 // time long
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Letztes Mal hast du einige positive Aktivitäten entdeckt, die du im Alltag einbauen kannst."
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Trotzdem könnte es sein, dass es dir schwerfällt, dranzubleiben."
+
+    say Wait(tm)
+    say Typing(tm)
+    
+    say Question(
+        title = "Deswegen würde ich dir zum Abschluss gerne noch ein paar Tipps dafür geben.",
+        buttons = [
+            Button("Ja, gerne.")
+        ]
+    )
+    hold
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Alles klar! Hier meine Tipps zum Durchhalten..."
+
+    say Wait(tm)
+    say Typing(tm)
+    say "1. Tipp: Erzähle anderen Leuten, was du machen willst! 🗣  Das macht dir etwas Druck, denn du willst deinen Freund:innen oder Familienmitgliedern ja später erzählen, was du gemacht hast und wie es war. 👥"
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Mein 2. Tipp ist auch sehr wichtig: Gib dir Zeit! ⏳ Es ist ganz normal, wenn es nicht sofort klappt. Man muss trainieren, das ist wie beim Sport. 💪"
+
+    say Wait(tm)
+    say Typing(tm)
+    say Question(
+        title = "Meistens dauert es mindestens 4 Wochen und erfordert viel Übung, bis du eine neue Gewohnheit drauf hast!",
+        buttons = [
+            Button("Gut zu wissen"),
+            Button("Oh, das dauert aber lang ⌛")
+        ]
+    )
+    hold
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Halte deine Fortschritte fest 🖊, zum Beispiel in einem Tagebuch oder in einem Trainingsplan."
+
+    say Wait(tm)
+    say Typing(tm)
+    say Question(
+        title = "Das geht auch mit dem Smartphone! Du kannst deine Fortschritte auch als Video einsprechen! Immer wenn du eine Aktivität gemacht hast, drehst du ein kurzes Video und erzählst darin, was du geschafft hast!",
+        buttons = [
+            Button("Gute Idee!")
+        ]
+    ) 
+    hold
+   
+    say Wait(tm)
+    say Typing(tm)
+    say "Hier kommt mein 3. Tipp für dich: 🙌 Suche dir Partner!"
+
+    say Wait(tm)
+    say Typing(tm)
+    say Question(
+        title = "Jemanden, mit dem du zusammen deine Aktivität machen kannst!",
+        buttons = [
+            Button("Gemeinsam ist besser!"),
+            Button("Hmm... gute Sache!")
+        ]
+    )
+    hold
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Einen Tipp hätte ich noch auf Lager..."
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Mein letzter Tipp: 🤗 Sei nicht so hart zu dir selbst!"
+
+    say Wait(tm)
+    say Typing(tm)
+    
+    say "Wenn du es einmal nicht geschafft hast dranzubleiben, kein Problem! Plane dann deine Aktivität für einen anderen Tag!"
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Dann bleibst du dran! Du schaffst das! 💪"
+
+    say Wait(tm)
+    say Typing(tm)
+    say Image("https://i.giphy.com/media/l2YSyNKf0NfUVRlmM/giphy.webp")
+
+    goto abschluss
+
+    abschluss:
+    
+    say Wait(tm)
+    say Typing(tm)
+    say "Das war es erst einmal mit den Unterhaltungen zu positiven Aktivitäten. 👏"
+
+    say Wait(tm)
+    say Typing(tm)
+    say Image("https://i.giphy.com/media/fxXdPCm38VWcVdUeMS/giphy-downsized.gif")
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Lass uns zum Abschluss nochmal alles zusammendurchgehen. 🤗"
+
+    say Wait(tm)
+    say Typing(tm)
+    say Question(
+        title = "Am Anfang haben wir besprochen, dass du mit positiven Aktivitäten deine Gedanken und deine Stimmung positiv beeinflussen kannst! 🤗",
+        buttons = [
+            Button("ja!")
+        ]
+    )
+    hold
+
+    say Wait(tm)
+    say Typing(tm)
+    say Question(
+        title = "Außerdem haben wir positive Aktivitäten für deinen Alltag gefunden. Und wie du sie planst und umsetzt!",
+        buttons = [
+            Button("✅")
+        ]
+    )
+    hold
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Zum Abschluss habe ich dir noch ein paar Tipps gegeben, die dir dabei helfen sollen, dranzubleiben. 💪"
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Ich hoffe, du hast was gelernt und wendest das Erlernte an! 🤗"
+
+    say Wait(tm)
+    say Typing(tm)
+    say "Positive Aktivitäten planen und umsetzten ist nämlich eine der besten Methoden, um deine Stimmung zu verbessern!"
+
+    goto end
